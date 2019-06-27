@@ -1,0 +1,86 @@
+/**************/
+/* common */
+/**************/
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+.container {
+    margin: 0 auto;
+    /* padding: 0 30px; */
+    max-width: 1200px;
+    background-color:red;
+    overflow: hidden;
+}
+
+/**************/
+/* team */
+/**************/
+.team {
+    background-color:yellow;
+    padding: 50px 20px;
+}
+.team .member {
+    background-color: #dfdc55;
+    /* padding: 0; */
+    /* display:block; */
+    margin-bottom: 30px;
+    position: relative;
+} 
+.team .member figure  {
+    /* width: 100%; */
+    /* display: block; */
+    margin: 0;
+}
+.team .member figure img {
+    width: 100%;
+    display: block;
+    /* margin: 0; */
+}
+.team .member .text {
+    background-color: green;
+    padding: 10px;
+}
+.team .member .text h1 {
+    margin-top: 0;
+}
+.team .member .text p {
+    margin-bottom: 0;
+}
+.team .member .box {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(241, 88, 183);
+    position: absolute;
+    right: 0px;
+}
+.team .member-top {
+    width: 50%;
+    margin: 0 auto;
+}
+.team .member-middle {
+    width: 45%;
+    float: left;
+}
+.team .member-middle:first-child {
+    margin-right: 10%;
+}
+.team  .member-big .member {
+    margin-bottom: 0;
+    /* margin-top: 30px; */
+}
+
+@media only screen and (min-width: 992px) {
+   .team {
+       padding: 50px 20px;
+   } 
+   .team .member-out {
+       float: left;
+       width: 30%;
+       margin-right: 5%;
+   }
+   .team .member-middle {
+       width: 65%;
+   }
+}
+    
