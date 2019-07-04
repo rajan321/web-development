@@ -1,0 +1,28 @@
+/**************/
+/* common */
+/**************/
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+body {
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    /* padding: 0 30px; */
+    max-width: 1200px;
+    background-color: red;
+    overflow: hidden;
+}
+.pc {
+    display: none;
+}
+
+/**************/
+/* common */
+/**************/
+header {
+    background-color: yellow;
+}
+
