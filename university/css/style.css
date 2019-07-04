@@ -10,9 +10,9 @@ body {
 }
 .container {
     margin: 0 auto;
-    /* padding: 0 30px; */
+    padding: 0 30px;
     max-width: 1200px;
-    background-color: red;
+    /* background-color: red; */
     overflow: hidden;
 }
 .pc {
@@ -20,9 +20,43 @@ body {
 }
 
 /**************/
-/* common */
+/* banner */
 /**************/
 header {
     background-color: yellow;
 }
-
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+header img {
+    height: 30px;
+}
+header .menu-btn {
+   font-size: 20px;
+    background: none;
+    border: none;
+}
+/**************/
+/* banner */
+/**************/
+.banner {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+.banner h1 {
+    margin: 0;
+    color: white;
+    font-size: 35px;
+    text-align: center
+}
+.banner p {
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
