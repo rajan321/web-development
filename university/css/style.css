@@ -8,6 +8,7 @@
 body {
     margin: 0;
 }
+
 .container {
     margin: 0 auto;
     padding: 0 30px;
@@ -15,8 +16,32 @@ body {
     /* background-color: red; */
     overflow: hidden;
 }
+
 .pc {
     display: none;
+}
+
+a:hover, .common-btn:hover {
+    opacity: 0.9;
+}
+
+.common-heading {
+    font-size: 20px;
+    text-align: center;
+    color: #103c42;
+    margin-top: 0;
+}
+
+.common-btn {
+    background-color: #f04e23;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 19px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 /**************/
@@ -25,20 +50,24 @@ body {
 header {
     background-color: yellow;
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
 }
+
 header img {
     height: 30px;
 }
+
 header .menu-btn {
-   font-size: 20px;
+    font-size: 20px;
     background: none;
     border: none;
 }
+
 /**************/
 /* banner */
 /**************/
@@ -47,16 +76,75 @@ header .menu-btn {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 60px 0;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
 }
+
 .banner h1 {
     margin: 0;
-    color: white;
-    font-size: 35px;
-    text-align: center
+    font-size: 28px;
 }
+
 .banner p {
-    color: white;
-    font-size: 27px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/**************/
+/* programme */
+/**************/
+.programs {
+    background-color: #eef8f0;
+    padding: 40px 0;
+}
+
+.programs .program figure {
+    margin: 0;
+}
+
+.programs .program img {
+    width: 100%;
+    display: block;
+}
+
+.programs .program .text {
+    padding: 30px 20px;
+    background-color: #e3e7e8;
+}
+
+.programs .program h4 {
+    color: #f04e23;
+    margin: 0;
+}
+
+.programs .program ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.programs .program a {
+    font-size: 11px;
+    color: #f04e23;
+}
+
+.programs .admission {
+    margin: 50px -30px 0;
+}
+.programs .admission .content {
+    background-color: blue;
+    padding: 30px 20px;
     text-align: center;
+}
+.programs .admission .content .field {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.programs .admission .content .field label {
+    width: 30%;
+}
+.programs .admission .content .field input {
+    width: 70%;
+    padding: 10px;
 }
