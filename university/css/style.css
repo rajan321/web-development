@@ -151,3 +151,109 @@ header .menu-btn {
     background: none;
     border: 1px solid white;
 }
+
+/**************/
+/* programme */
+/**************/
+
+.researches {
+    background-color: #252525;
+    padding-bottom: 30px;
+}
+.researches .common-heading {
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    
+}
+.researches .research img {
+    width: 100%;
+    display: block;
+}
+.researches .research figure {
+    margin: 0;
+}
+.researches .research .content {
+    background-color: #e3e7e8;
+    padding: 25px;
+}
+.researches .research  a {
+    font-size: 11px;
+    color: #f04e23;
+}
+
+/**************/
+/* news&event */
+/**************/
+.news-event .event {
+    display: flex;
+}
+.news-event h3 {
+    padding-top: 15px;
+}
+.news-event .event .text {
+    width: 40%;
+    background-color: #235d75;
+}
+.news-event .event figure {
+    margin: 0;
+}
+.news-event .event img{
+    width: 60%;
+}
+
+/**************/
+/* footer */
+/**************/
+ footer {
+    background-color: #2d322e;
+    color: #eff9f1;
+ }
+ footer .footer-heading {
+      color: #eff9f1;
+      font-size: 20px;
+      text-align: left;
+ }
+ footer ul {
+     padding: 0;
+ }
+footer ul li {
+    list-style: none;
+    /* padding: 0; */
+}
+footer .top .about ul li {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+    /* padding: 0; */
+}
+footer .top .about ul a {
+    color: #2d322e;
+}
+footer .top .about ul li i {
+    font-size: 15px;
+    /* margin: 10px; */
+}
+footer .top .contact i {
+    color: #f04e23;
+    margin-right: 15px;
+}
+footer .top .contact a {
+    color: white;
+}
+
+
+
+
+
+
+footer .bottom {
+    padding: 10px;
+    background: grey;
+    width: 100%;
+    text-align: center;
+}
