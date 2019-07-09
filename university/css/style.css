@@ -22,6 +22,10 @@ body {
     display: none !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:hover,
 .common-btn:hover {
     opacity: 0.9;
@@ -232,7 +236,7 @@ header .menu-btn {
 }
 
 .news-event .event {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -366,24 +370,43 @@ footer .bottom {
 
 @media only screen and (min-width: 992px) {
 
+    /**************/
+    /* common */
+    /**************/
     .pc {
-        display: block;
+        display: block !important;
     }
 
-    .body {
-        margin: 0 auto;
+    .common-heading {
+        margin-bottom: 35px;
     }
 
-    a {
-        text-decoration: none;
+    /**************/
+    /* header */
+    /**************/
+    header {
+        background-color: transparent;
     }
 
     header .menu-btn {
         display: none;
-
     }
 
-    header nav ul {
+    header .nav-box {
+        position: static;
+        background-color: transparent;
+    }
+
+    header .nav-box ul li {
+        display: inline-block;
+    }
+
+    header .nav-box ul li a {
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    /* header nav ul {
         display: flex;
         justify-content: space-between;
         overflow: hidden;
@@ -393,7 +416,6 @@ footer .bottom {
 
     header nav ul li {
         font-size: 20px;
-        /* font-weight: bold; */
         margin: 15px;
     }
 
@@ -403,7 +425,7 @@ footer .bottom {
 
     header nav ul li a:hover {
         color: #f04e23;
-    }
+    } */
 
     /**************/
     /* banner */
@@ -411,30 +433,47 @@ footer .bottom {
     .banner {
         margin-top: -50px;
         padding: 160px 0;
-
     }
 
     .banner h1 {
         line-height: 55px;
         font-size: 45px;
         margin-bottom: 30px;
-        font-weight: bold;
     }
 
     .banner p {
         font-size: 30px;
-        margin-top: 30px;
     }
 
     /**************/
     /* program */
     /**************/
+    .programs .container {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .programs .programs-outer {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .programs .programs-outer .program {
+        width: 48%;
+    }
 
+    .programs .admission {
+        width: 37%;
+        margin: 0;
+        background-color: #235d75;
+        padding: 30px 0;
+    }
 
-
-
+    .programs .admission .common-heading {
+        color: white;
+        margin-bottom: 0;
+    }
 
     /**************/
     /* research */
@@ -442,53 +481,54 @@ footer .bottom {
 
     .researches .container {
         display: flex;
+        justify-content: space-between;
     }
-
 
     .researches .research {
-        width: 33%;
-        float: left;
-        margin: 3, 3%;
+        width: 32%;
     }
-
-
-
-
-
-
-
 
     /**************/
     /* news&event*/
     /**************/
+    .news-event .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
+    .news-event .event {
+        margin-bottom: 35px;
+        width: 48%;
+    }
 
+    .news-event .event:nth-child(2) {
+        margin-bottom: 35px;
+    }
 
+    .news-event .event .text {
+        width: 60%;
+        padding-left: 20px;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
 
+    .news-event .event figure {
+        width: 36%;
+    }
 
     /**************/
     /*footer */
     /**************/
-    footer .top {
+    footer .top .container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
 
     footer .top .about {
         width: 50%;
-
     }
 
     footer .top .contact {
         width: 50%;
-        /* float: left; */
     }
-
-
-
-
-
-
 }
