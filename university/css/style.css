@@ -7,6 +7,8 @@
 } */
 body {
     margin: 0;
+    font-family: 'PT Serif',
+    serif;
 }
 
 .container {
@@ -45,10 +47,10 @@ a:hover, .common-btn:hover {
 }
 
 /**************/
-/* banner */
+/* header*/
 /**************/
 header {
-    background-color: yellow;
+    background-color: #e3e7e8;
 }
 
 header .container {
@@ -245,15 +247,104 @@ footer .top .contact i {
 footer .top .contact a {
     color: white;
 }
-
-
-
-
-
-
 footer .bottom {
     padding: 10px;
     background: grey;
     width: 100%;
     text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .pc {
+        display: block;
+} 
+.body {
+    margin: 0 auto;
+}
+
+a {
+   text-decoration: none; 
+}
+header .menu-btn {
+    display: none;
+
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    list-style: none;
+    
+}
+
+header nav ul li {
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin: 15px;
+}
+header nav ul li a {
+    color: white;
+}
+header nav ul li a:hover {
+    color: #f04e23;
+}
+
+/**************/
+/* banner */
+/**************/
+.banner {
+    margin-top: -50px;
+    padding: 160px 0;
+    
+}
+.banner h1 {
+      line-height: 55px;
+      font-size: 45px;
+      margin-bottom: 30px;
+      font-weight: bold;
+}
+.banner p {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/**************/
+/* program */
+/**************/
+
+
+
+
+
+
+
+/**************/
+/* research */
+/**************/
+
+
+
+
+.researches .research {
+    width:30%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
